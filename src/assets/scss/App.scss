@@ -3,14 +3,26 @@
 @import "./OffcanvasView.scss";
 @import "./Navbar.scss";
 @import "./Homepage.scss";
-
+@import "./About.scss";
+@import "./Contact.scss";
+@import "./Footer.scss";
+@import "./Resume.scss";
 
 
 // Fonts
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
 
 h1 {
     font-family: 'Outfit', sans-serif;
     font-weight: 700;
+}
+
+.container {
+    max-width: 900px;
+}
+
+#App {
+    height: 100vh;
 }

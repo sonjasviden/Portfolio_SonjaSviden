@@ -1,0 +1,56 @@
+.about-page {
+    .about-content {
+        .text {
+            width: 100%;
+            padding: 20px;
+
+            h3 {
+                font-family: 'Outfit', sans-serif;
+                margin-bottom: 20px;
+            }
+
+            p {
+                line-height: 1.5;
+            }
+        }
+
+        .symbols {
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+
+            .icon-container {
+                .icon-div {
+                    margin-bottom: 2rem;
+
+                    h3 {
+                        font-family: 'Outfit', sans-serif;
+                        font-size: 18px;
+                    }
+                }
+
+                svg {
+                    height: 30px;
+                    width: 30px;
+                    padding: 4px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .about-content {
+        display: flex;
+
+        .text {
+            width: 70%;
+            padding: 20px;
+
+            h3 {
+                font-family: 'Outfit', sans-serif;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}

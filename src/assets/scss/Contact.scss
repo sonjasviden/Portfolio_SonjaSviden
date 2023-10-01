@@ -1,0 +1,38 @@
+.contact-page {
+    .col {
+        width: 80%;
+
+        a {
+            color: #5a5a5a;
+            font-family: 'Outfit', sans-serif;
+            text-decoration: none;
+        }
+
+        .card {
+            border: none;
+
+            .card-body {
+                p {
+                    font-family: 'Poppins', sans-serif;
+                    color: #5a5a5a;
+                }
+            }
+        }
+
+        .form-control {
+            border: 1px solid #eaeaea;
+
+            &::placeholder {
+                font-family: 'Poppins', sans-serif;
+                font-weight: 300;
+                color: #a5a5a5;
+            }
+
+            &:focus {
+                box-shadow: none;
+                background-color: #eaeaea;
+            }
+
+        }
+    }
+}

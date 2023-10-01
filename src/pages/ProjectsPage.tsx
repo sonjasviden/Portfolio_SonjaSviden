@@ -10,7 +10,7 @@ const ProjectsPage = () => {
         <div className="projects-page">
             {projectData && (
                 <>
-                    <Container className="py-4 px-5">
+                    <Container className="py-4">
                         <h1 className="py-4">Projects</h1>
                         <ProjectCard />
                     </Container>

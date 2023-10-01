@@ -4,7 +4,7 @@
     justify-content: center;
 
     .homepage-text {
-        width: 50%;
+        width: 100%;
         padding: 2rem;
 
         h1 {
@@ -49,11 +49,26 @@
     }
 
     .homepage-img {
+
+        img {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 800px) {
+
+    .homepage-text {
+        width: 50% !important;
+    }
+
+    .homepage-img {
         width: 30%;
         height: 100%;
 
         img {
             width: 100%;
+            display: block !important;
         }
     }
 }
