@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app"
 import { getStorage } from "firebase/storage"
 import { getFirestore } from "firebase/firestore"
 import { collection, DocumentData, CollectionReference } from "firebase/firestore"
-import { Project, Projects } from "../types/projects.types"
+import { Image, Project, Projects } from "../types/projects.types"
 
 
 // Your web app's Firebase configuration
@@ -32,6 +32,7 @@ const createCollection = <T = DocumentData>(collectionName: string) => {
 // Export collections references
 export const projectsCol = createCollection<Projects>("project")
 export const projectCol = createCollection<Project>("project")
+export const imageCol = createCollection<Image>("images")
 
 
 export default app

@@ -1,0 +1,22 @@
+.navbar {
+
+    .navbar-nav {
+        margin-right: 15px;
+    }
+
+    .nav-link {
+        font-family: 'Outfit', sans-serif;
+        font-size: 15px;
+        font-weight: 400;
+        color: #282727;
+    }
+
+    .nav-link.active {
+        border-bottom: 1px solid #c0b5b5;
+        color: #c0b5b5;
+    }
+
+    .navbar-brand {
+        font-family: "Bebas Neue", sans-serif;
+    }
+}

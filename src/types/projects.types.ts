@@ -6,14 +6,20 @@ export type Project = {
     website: string
     github: string
     frontImg: string
-    projectImages: ProjectImage[]
+    projectImages: Image[]
+    shortAbout: string
 }
 
 export type Projects = Project[]
 
 
-export interface ProjectImage {
-    id: string,
+export type Image = {
     path: string,
     url: string
 }
+
+export type Images = {
+    homepagePic: Image
+    favIcon: Image
+}
+

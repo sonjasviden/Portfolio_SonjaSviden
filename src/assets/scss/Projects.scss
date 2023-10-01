@@ -1,16 +1,14 @@
-// .projects-page {
-//     h1 {
-//         font-family: 'Outfit', sans-serif;
-//         font-weight: 700;
-//     }
-// }
+.projects-page {}
 
 
 .project-card {
     .card {
+        cursor: pointer;
+        border: none;
+
         .card-body {
-            height: 300px;
             padding: 0;
+            min-height: 300px;
 
             img {
                 display: block;
@@ -18,6 +16,9 @@
                 height: 100%;
                 object-fit: cover;
                 object-position: top;
+                border-radius: .375rem;
+                min-height: 300px;
+
             }
 
             .overlay {
@@ -26,12 +27,13 @@
                 bottom: 0;
                 left: 0;
                 right: 0;
-                height: 100%;
+                max-height: 100%;
                 width: 100%;
                 opacity: 0;
                 transition: .5s ease;
                 background: rgb(0, 0, 0);
                 background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%);
+                border-radius: .375rem;
 
                 .text {
                     color: white;
@@ -43,7 +45,8 @@
                     -ms-transform: translate(-50%, -50%);
                     transform: translate(-50%, -50%);
                     text-align: left;
-                    width: 80%;
+                    width: 100%;
+                    margin: 20px;
 
                     .card-title {
                         color: white;
