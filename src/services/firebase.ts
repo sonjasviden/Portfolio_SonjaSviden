@@ -1,5 +1,4 @@
 import { initializeApp } from "firebase/app"
-import { getAuth } from "firebase/auth"
 import { getStorage } from "firebase/storage"
 import { getFirestore } from "firebase/firestore"
 import { collection, DocumentData, CollectionReference } from "firebase/firestore"
@@ -19,9 +18,6 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig)
 
-// Get Auth instance
-export const auth = getAuth(app)
-
 // Get Firestore instance
 export const db = getFirestore(app)
 
@@ -36,5 +32,6 @@ const createCollection = <T = DocumentData>(collectionName: string) => {
 // Export collections references
 export const projectsCol = createCollection<Projects>("project")
 export const projectCol = createCollection<Project>("project")
+
 
 export default app

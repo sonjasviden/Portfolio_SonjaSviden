@@ -1,18 +1,19 @@
 export type Project = {
+    _id: number
     title: string
     about: string
     tech: string[]
     website: string
     github: string
-    projectImages: ProjectImages[]
+    frontImg: string
+    projectImages: ProjectImage[]
 }
 
 export type Projects = Project[]
 
 
-export interface ProjectImages {
+export interface ProjectImage {
     id: string,
     path: string,
     url: string
 }
-

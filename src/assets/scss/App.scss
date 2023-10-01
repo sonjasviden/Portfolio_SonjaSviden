@@ -1,1 +1,10 @@
 @import "bootstrap/scss/bootstrap";
+@import "./Projects.scss";
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+h1 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+}

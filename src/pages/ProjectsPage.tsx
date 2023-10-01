@@ -7,16 +7,16 @@ const ProjectsPage = () => {
     const { data: projectData } = useGetCollection(projectCol);
 
     return (
-        <>
+        <div className="projects-page">
             {projectData && (
                 <>
-                    <h1>Projects</h1>
-                    <Container>
+                    <Container className="py-4">
+                        <h1 className="py-4">Projects</h1>
                         <ProjectCard />
                     </Container>
                 </>
             )}
-        </>
+        </div>
     );
 };
 
