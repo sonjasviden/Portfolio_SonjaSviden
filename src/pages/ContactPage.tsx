@@ -1,11 +1,7 @@
-import { useState } from "react"
-import { Button, Card, Col, Container, Form, Row } from "react-bootstrap"
-import { Link, useNavigate } from "react-router-dom"
+import { Button, Card, Col, Container, Form } from "react-bootstrap"
+import { Link } from "react-router-dom"
 
 const ContactPage = () => {
-    const [errorMessage, setErrorMessage] = useState<string | null>(null)
-    const [loading, setLoading] = useState(false)
-    const navigate = useNavigate()
 
     return (
         <div>
@@ -28,6 +24,8 @@ const ContactPage = () => {
                                 <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
                                     <Form.Control as="textarea" rows={5} placeholder="Message" />
                                 </Form.Group>
+
+                                <Button type="submit">Send</Button>
                             </Form>
                         </Card.Body>
                     </Card>

@@ -3,11 +3,14 @@ import ReactDOM from 'react-dom/client'
 import App from './App.tsx'
 import './assets/scss/App.scss'
 import { BrowserRouter } from 'react-router-dom';
+import ThemeContextProvider from './contexts/ThemeContextProvider.tsx';
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <BrowserRouter>
-      <App />
+      <ThemeContextProvider>
+        <App />
+      </ThemeContextProvider>
     </BrowserRouter>
   </React.StrictMode>
 );

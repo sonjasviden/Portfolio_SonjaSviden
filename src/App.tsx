@@ -6,10 +6,17 @@ import ContactPage from "./pages/ContactPage"
 import ResumePage from "./pages/ResumePage"
 import Navigation from "./components/Navigation"
 import Footer from "./components/Footer"
+import useThemeContext from "./hooks/useThemeContext"
+import classNames from "classnames"
 
 const App = () => {
+  const { isDarkMode } = useThemeContext()
+
+  const cssClasses = classNames({
+    'bg-dark text-white': isDarkMode,
+  })
   return (
-    <div id="App">
+    <div id="App" className={cssClasses}>
       <Navigation />
 
       <Routes>

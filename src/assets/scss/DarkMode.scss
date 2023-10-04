@@ -1,0 +1,42 @@
+:root {
+    --background-color: #333;
+    --text-color: #e9e1e1;
+}
+
+.bg-dark {
+    .navbar-brand {
+        color: #eee8e8;
+    }
+
+    .resume-page {
+        p {
+            color: #eee8e8;
+        }
+    }
+
+    .footer {
+        svg {
+            fill: #eee8e8;
+        }
+    }
+
+    .contact-page {
+        a {
+            color: #eee8e8;
+        }
+    }
+
+    h1 {
+        color: #eee8e8;
+    }
+
+    .nav-link {
+        color: #eee8e8;
+    }
+
+    .toggle-theme-btn {
+        svg {
+            fill: #eee8e8;
+        }
+    }
+}

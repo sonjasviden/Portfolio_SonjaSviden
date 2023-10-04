@@ -7,6 +7,7 @@
 @import "./Contact.scss";
 @import "./Footer.scss";
 @import "./Resume.scss";
+@import "./DarkMode.scss";
 
 
 // Fonts
@@ -19,10 +20,16 @@ h1 {
     font-weight: 700;
 }
 
+.ease-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+    /* Återställ transform när elementet är synligt */
+}
+
 .container {
     max-width: 900px;
 }
 
 #App {
-    height: 100vh;
+    min-height: 100vh;
 }
