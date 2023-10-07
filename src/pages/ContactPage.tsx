@@ -30,7 +30,7 @@ const ContactPage = () => {
                         </Card.Body>
                     </Card>
 
-                    <Link to="/home"><span className="mx-2">&#8592;</span>Go back home</Link>
+                    <Link to="/"><span className="mx-2">&#8592;</span>Go back home</Link>
                 </Col>
 
             </Container>

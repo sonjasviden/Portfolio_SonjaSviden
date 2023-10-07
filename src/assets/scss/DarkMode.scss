@@ -1,9 +1,38 @@
-:root {
-    --background-color: #333;
-    --text-color: #e9e1e1;
+#App {
+    transition: all 0.3s linear 0s;
 }
 
-.bg-dark {
+.bg-dark,
+.dark-offcanvas {
+    background-color: #020a13 !important;
+    transition: all 0.3s linear 0s;
+
+    .h5 {
+        color: #3f566e;
+    }
+
+    .offcanvas-header {
+        border-bottom: 1px solid #14202b;
+    }
+
+    svg {
+        color: #3f566e;
+    }
+
+    .offcanvas-body {
+
+
+        p,
+        h3,
+        h4 {
+            color: #c6c6c6;
+        }
+    }
+
+    .project-footer {
+        background-color: #0f1f2f;
+    }
+
     .navbar-brand {
         color: #eee8e8;
     }

@@ -5,12 +5,16 @@ import { Offcanvas, Image } from "react-bootstrap"
 import { projectCol } from "../services/firebase"
 import { Project } from "../types/projects.types";
 import { Link } from "react-router-dom";
+import useThemeContext from "../hooks/useThemeContext";
 
 const ProjectCard = () => {
-    const { data: projectData } = useGetCollection(projectCol);
     const [show, setShow] = useState(false)
     const [selectedProject, setSelectedProject] = useState<Project>()
 
+    const { data: projectData } = useGetCollection(projectCol);
+    const { isDarkMode } = useThemeContext();
+
+    const offCanvasClass = isDarkMode ? 'dark-offcanvas' : 'light-offcanvas';
 
     const handleClose = () => setShow(false)
 
@@ -49,7 +53,7 @@ const ProjectCard = () => {
                             </Col>
                         ))}
                     </Row>
-                    <Offcanvas placement={'end'} show={show} onHide={handleClose}>
+                    <Offcanvas className={`offcanvas ${offCanvasClass}`} placement={'end'} show={show} onHide={handleClose}>
                         {selectedProject && (
                             <>
                                 <Offcanvas.Header>

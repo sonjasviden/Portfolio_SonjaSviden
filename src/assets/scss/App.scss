@@ -20,16 +20,11 @@ h1 {
     font-weight: 700;
 }
 
-.ease-in.visible {
-    opacity: 1;
-    transform: translateY(0);
-    /* Återställ transform när elementet är synligt */
-}
-
 .container {
     max-width: 900px;
 }
 
 #App {
     min-height: 100vh;
+    background-attachment: fixed;
 }
