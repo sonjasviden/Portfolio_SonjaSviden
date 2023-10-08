@@ -10,11 +10,18 @@
 
         .card {
             border: none;
+            background-color: transparent;
 
             .card-body {
                 p {
                     font-family: 'Poppins', sans-serif;
                     color: #5a5a5a;
+                }
+
+                .btn {
+                    background-color: #6e8195;
+                    border: none;
+                    border-radius: 3px;
                 }
             }
         }

@@ -21,7 +21,6 @@
 
     .offcanvas-body {
 
-
         p,
         h3,
         h4 {
@@ -34,38 +33,70 @@
     }
 
     .navbar-brand {
-        color: #eee8e8;
+        color: #c6c6c6;
     }
 
     .resume-page {
         p {
-            color: #eee8e8;
+            color: #c6c6c6;
         }
     }
 
     .footer {
         svg {
-            fill: #eee8e8;
+            fill: #c6c6c6;
         }
     }
 
     .contact-page {
         a {
-            color: #eee8e8;
+            color: #c6c6c6;
+        }
+
+        .card-body {
+            .btn {
+                background-color: #0f1f2f !important;
+                color: #c6c6c6;
+            }
+
+            p {
+                color: #c6c6c6 !important;
+            }
+        }
+    }
+
+    .form-control {
+        background-color: transparent;
+        border: 1px solid #c6c6c6 !important;
+    }
+
+    input,
+    textarea {
+        &:focus {
+            background-color: #0f1f2f !important;
+            color: #c6c6c6;
+        }
+
+        &::placeholder {
+            color: #c6c6c6 !important;
         }
     }
 
     h1 {
-        color: #eee8e8;
+        color: #c6c6c6;
     }
 
     .nav-link {
-        color: #eee8e8;
+        color: #c6c6c6;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%23c6c6c6' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
 
     .toggle-theme-btn {
         svg {
-            fill: #eee8e8;
+            fill: #c6c6c6;
         }
     }
 }

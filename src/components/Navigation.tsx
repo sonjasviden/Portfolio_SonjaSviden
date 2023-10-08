@@ -12,6 +12,9 @@ const Navigation = () => {
 		toggleTheme()
 	}
 
+	const darkModeClass = isDarkMode ? 'bg-dark' : '';
+
+
 	return (
 		<Navbar expand="sm" className={`py-4 ${isDarkMode ? 'dark' : 'light'}`}>
 			<Container>
