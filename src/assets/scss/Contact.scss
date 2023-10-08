@@ -43,3 +43,11 @@
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    .contact-page {
+        .col {
+            width: 100%;
+        }
+    }
+}

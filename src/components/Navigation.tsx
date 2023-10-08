@@ -12,13 +12,10 @@ const Navigation = () => {
 		toggleTheme()
 	}
 
-	const darkModeClass = isDarkMode ? 'bg-dark' : '';
-
-
 	return (
 		<Navbar expand="sm" className={`py-4 ${isDarkMode ? 'dark' : 'light'}`}>
 			<Container>
-				<Navbar.Brand as={Link} to="/">Sonja Svidén</Navbar.Brand>
+				<Navbar.Brand className='px-2' as={Link} to="/">Sonja Svidén</Navbar.Brand>
 
 				<Navbar.Toggle aria-controls="basic-navbar-nav" />
 				<Navbar.Collapse id="basic-navbar-nav">
