@@ -24,12 +24,14 @@
             font-size: 25px;
             font-weight: 600;
             margin-bottom: 1.6rem;
+            color: #06223e;
         }
 
         h4 {
             font-family: 'Outfit', sans-serif;
             font-size: 20px;
             font-weight: 400;
+            color: #06223e;
         }
 
     }
@@ -50,11 +52,17 @@
             background-color: transparent;
         }
 
+        path {
+            stroke: #06223e;
+            stroke-width: 2;
+        }
+
         .offcanvas-title {
             cursor: pointer;
             font-family: 'Outfit', sans-serif;
             font-size: 15px;
             font-weight: 600;
+            color: #06223e;
         }
     }
 

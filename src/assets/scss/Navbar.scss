@@ -18,11 +18,10 @@
         justify-content: space-between;
         padding: 20px 10px 20px 10px;
 
-        svg {}
-
         .toggle-theme-btn {
             background-color: transparent;
             border: none;
+            fill: #06223e;
         }
     }
 
@@ -30,7 +29,7 @@
         font-family: 'Outfit', sans-serif;
         font-size: 15px;
         font-weight: 400;
-        color: #282727;
+        color: #06223e;
     }
 
     .nav-link.active {
@@ -40,5 +39,6 @@
 
     .navbar-brand {
         font-family: "Bebas Neue", sans-serif;
+        color: #06223e;
     }
 }
