@@ -1,4 +1,5 @@
 .contact-page {
+
     .col {
         width: 80%;
 
@@ -42,6 +43,12 @@
 
         }
     }
+.lightwidget-widget {
+    width: 100%;
+    overflow-x: hidden !important;
+    border: none;
+    scrollbar-color: #000 !important;
+}
 }
 
 @media only screen and (max-width: 600px) {
